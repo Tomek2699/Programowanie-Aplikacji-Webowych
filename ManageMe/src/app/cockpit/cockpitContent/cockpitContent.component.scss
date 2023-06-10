@@ -1,0 +1,123 @@
+.dashboard-content-wrapper {
+    background-color: rgb(245, 245, 245);
+    min-height: 87vh;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.project-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titles {
+    text-align: center;
+}
+
+.card{
+    width: 48%;
+    height: 70vh;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.project-description {
+    padding: 0 20px 0 20px;
+    text-align: justify;
+}
+
+.functionalities-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.functionalities-header h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.functionalities-header button {
+    margin-left: 10px;
+    width: 5rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.functionalities-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.functionality-info {
+    flex-grow: 1;
+}
+
+.functionalities-list {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.functionality-actions {
+    display: flex;
+    align-items: center;
+
+    .btn-outline-warning:hover{
+        color: white;
+    }
+}
+
+.functionality-actions button {
+    margin-left: 10px;
+    width: 6rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.functionalities-task-list {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.task-state-list  {
+    display: flex;
+    align-items: center;
+}
+
+.task-state {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.task-state-list button {
+    margin-left: 2rem;
+    width: 6rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline-warning:hover{
+    color: white;
+}

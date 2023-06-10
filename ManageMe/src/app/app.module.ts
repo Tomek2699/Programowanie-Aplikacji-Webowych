@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +15,10 @@ import { CockpitFooterComponent } from './cockpit/cockpitFooter/cockpitFooter.co
 import { CockpitNavbarComponent } from './cockpit/cockpitNavbar/cockpitNavbar.component';
 import { CockpitSidebarComponent } from './cockpit/cockpitSidebar/cockpitSidebar.component';
 import { CockpitContentComponent } from './cockpit/cockpitContent/cockpitContent.component';
+import { EditDialogFunctionalitiesComponent } from './cockpit/cockpitContent/editDialogFunctionalities/editDialogFunctionalities.component';
+import { AddDialogTasksComponent } from './cockpit/cockpitContent/addDialogTasks/addDialogTasks.component';
+import { AddDialogFunctionalitiesComponent } from './cockpit/cockpitContent/addDialogFunctionalities/addDialogFunctionalities.component';
+import { EditDialogTasksComponent } from './cockpit/cockpitContent/editDialogTasks/editDialogTasks.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +33,17 @@ import { CockpitContentComponent } from './cockpit/cockpitContent/cockpitContent
     CockpitFooterComponent,
     CockpitNavbarComponent,
     CockpitSidebarComponent,
-    CockpitContentComponent
+    CockpitContentComponent,
+    EditDialogFunctionalitiesComponent,
+    AddDialogTasksComponent,
+    AddDialogFunctionalitiesComponent,
+    EditDialogTasksComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

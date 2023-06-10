@@ -1,1 +1,62 @@
-<p>cockpit content</p>
+<div class="dashboard-content-wrapper">
+    <div *ngFor="let project of projectList">
+        <div class="project-title">
+            <h1>{{ project.title }}</h1>
+        </div>
+        <div class="project-description">
+            <p>{{ project.description }}</p>
+        </div>
+        <div class="project-details">
+            <div class="functionalities card">
+                <div class="functionalities-header w-100">
+                    <h2 class="titles mx-4">Functionalities</h2>
+                    <div>
+                        <button type="button" class="btn btn-outline-success" (click)="openAddDialogFunctionalities()">Add</button>
+                    </div>
+                </div>
+                <div class="functionalities-name" *ngFor="let functionality of project.functionallities">
+                    <div class="functionality-info">
+                        <p class="functionalities-list">{{ functionality.functionallityName }}</p>
+                    </div>
+                    <div class="functionality-actions">
+                        <button type="button" class="btn btn-outline-success" (click)=" openAddDialogTasks()">Add</button>
+                        <button type="button" class="btn btn-outline-warning" (click)="openEditDialogFunctionalities()">Edit</button>
+                        <button type="button" class="btn btn-outline-danger"(click)="deleteFunctionality(functionality.functionallityID)">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks card">
+
+
+
+                <div class="tasks-header w-100">
+                    <h2 class="titles">Tasks</h2>
+                    <div>
+                        <button type="button" class="btn btn-outline-success">Add</button>
+                    </div>
+                </div>
+
+                <div *ngFor="let functionality of project.functionallities">
+                    <p class="functionalities-task-list">
+                        {{ functionality.functionallityName }} click:</p>
+                    <div *ngFor="let task of functionality.tasks">
+                        <div class="task-state-list">
+                            <div>
+                                {{ task.taskName }}
+                            </div>
+                            <div>
+                                <select class="task-state">
+                                    <option value="To Do">To Do</option>
+                                    <option value="Doing">Doing</option>
+                                    <option value="Done">Done</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning" (click)="openEditDialogTasks()">Edit</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
