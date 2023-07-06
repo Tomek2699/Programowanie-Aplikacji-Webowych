@@ -1,7 +1,7 @@
 export const projectDetails = [
     {
         id: 1,
-        title: 'Project 1',
+        title: 'Bees project',
         description: 'This is my new project about bees.',
         functionallities: [
             {
