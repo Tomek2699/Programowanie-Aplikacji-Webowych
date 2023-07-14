@@ -6,18 +6,26 @@
 
   h1 {
     font-size: 30px;
-    color: #3b71ca !important;
+    color: green !important;
     font-weight: bold;
     padding: 1rem;
     margin: 0;
   }
 
   .hide-menu {
-    color: rgb(42, 53, 71);
+    color: green;
     font-size: 12px;
     font-weight: 500 !important;
     margin-left: 15px;
     text-transform: uppercase;
+  }
+
+  .logo{
+    color: green;
+  }
+
+  button{
+    background-color: brown;
   }
 
   .sidebar-nav {
